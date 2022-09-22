@@ -8,11 +8,64 @@
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
     <!-- stylesheets-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/styles/normilize.css" />
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="card">
+        <h1 class="heading">Regester Hear</h1>
+        <form class="new-form">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter Name"
+            />
+            <small>requried Username*</small>
+            <div class="form-control">
+              <label for="Email Address">Email Address</label>
+              <input
+                type="text"
+                id="mail"
+                name="mail"
+                placeholder="Enter email"
+              />
+              <small>requried EmailId*</small>
+              <div class="form-control">
+                <label for="Mobile Number">Mobile Number</label>
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  placeholder="Enter number"
+                />
+                <small>requried number*</small>
+                <div class="form-control">
+                  <label for="Passwoed">Passwoed</label>
+                  <input
+                    type="text"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                  />
+                  <small>requried password*</small>
+                  <div class="form-control">
+                    <label for="ConformPassword">ConformPassword</label>
+                    <input
+                      type="text"
+                      id="ConformPassword"
+                      name="conformpassword"
+                      placeholder="Conform Password"
+                    />
+                    <small>requried password*</small>
+                    <button class="btn btn_1">Submit</button>
+        </form>
+      </div>
+    </div>
+
     <script src="/script/script.js"></script>
   </body>
 </html>
