@@ -64,13 +64,6 @@ li {
   color: black;
   border-radius: 10px;
 }
-.card small {
-  visibility: hidden;
-}
-.card.error small {
-  color: red;
-  visibility: visible;
-}
 
 
 .btn {
@@ -97,16 +90,30 @@ li {
   margin-bottom: 1.5rem;
 }
 
-label,
-input {
+.form-control label,
+.form-control input {
   display: block;
   width: 100%;
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
 }
-input.error {
+.form-control.error input  {
   border-color: red;
 }
+.form-control.sucess input  {
+  border-color: green;
+}
+.form-control small{
+  visibility: hidden;
+}
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+.form-control.sucess small{
+  visibility: hidden;
+}
+
 
 label {
   font-size: 1.25rem;
@@ -119,7 +126,7 @@ input {
   font-size: 600;
   border-radius: 10px;
   outline: none;
-  border-width: 1px;
+  border-style: solid;
   border-color: black;
 }
 
