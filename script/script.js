@@ -37,7 +37,7 @@ function username(el,max,min){
             document.querySelector('small').textContent = `name should be max of ${max}`;
             error(el)
         }else{
-            sucess(el)
+            error(el)
         }
     }
 
