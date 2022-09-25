@@ -7,44 +7,18 @@ const numberEl = document.getElementById('number')
 const passwordEl = document.getElementById('password')
 const ConformPasswordel = document.getElementById('ConformPassword')
 
+const elements = [formEl,usernameEl,emilEl,numberEl,passwordEl,ConformPasswordel]
 
-formEl.addEventListener('submit',function (event){
-    event.preventDefault();
-    if(usernameEl.value === ''){
-        let formcontrolEl = usernameEl.parentElement;
-        formcontrolEl.classList.add('error')
-    }else{
-        let formcontrolEl = usernameEl.parentElement;
-        formcontrolEl.classList.add('sucess')
-    }
-    if(emilEl.value === ''){
-        let formcontrolEl = emilEl.parentElement;
-        formcontrolEl.classList.add('error')
-    }else{
-        let formcontrolEl = emilEl.parentElement;
-        formcontrolEl.classList.add('sucess')
-    }
-    if(numberEl.value === ''){
-        const formcontrolEl = numberEl.parentElement;
-        formcontrolEl.class.add('error')
-    }else{
-        const formcontrolEl = numberEl.parentElement;
-        formcontrolEl.classList.add('sucess')
-    }
-    if(passwordEl.value === ''){
-        const formcontrolEl = passwordEl.parentElement;
-        formcontrolEl.classList.add('error')
-    }else{
-        const formcontrolEl = passwordEl.parentElement;
-        formcontrolEl.classList.add('sucess')
-    }
-    if(ConformPasswordel.value === ''){
-        const formcontrolEl = ConformPasswordel.parentElement;
-        formcontrolEl.classList.add('error')
-    }else{
-        const formcontrolEl = ConformPasswordel.parentElement;
-        formcontrolEl.classList.add('sucess')
-    }
-})
+function callEverything(elements){
+    for(el of elements){
+        if(el.value === ''){
+            let formcontrolEl = el.parentElement;
+            formcontrolEl.classList.add('error')
+        }else{
+            let formcontrolEl = el.parentElement;
+            formcontrolEl.classList.add('sucess')}
+        }
+}
+
 
 
