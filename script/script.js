@@ -9,8 +9,9 @@ const ConformPasswordel = document.getElementById('ConformPassword')
 
 const elements = [formEl,usernameEl,emilEl,numberEl,passwordEl,ConformPasswordel]
 
-function callEverything(elements){
-    for(el of elements){
+function callEverything(arr){
+    for(const el of arr){
+        console.log(el)
         if(el.value === ''){
             let formcontrolEl = el.parentElement;
             formcontrolEl.classList.add('error')
@@ -20,5 +21,9 @@ function callEverything(elements){
         }
 }
 
+formEl.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    callEverything(elements)
+})
 
 
