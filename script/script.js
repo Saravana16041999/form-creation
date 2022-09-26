@@ -26,7 +26,7 @@ const sucess = (el)=>{
 
 function callEverything(elms){
     for(const el of elms){
-        if(el.value === ''){
+        if(el.value === ``){
                 error(el,`${el.name} is required`)
         }else{
                 sucess(el)
