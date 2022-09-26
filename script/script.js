@@ -22,8 +22,8 @@ const sucess = (el)=>{
 
 
 
-function callEverything(arr){
-    for(const el of arr){
+function callEverything(elms){
+    for(const el of elms){
         console.log(el)
         if(el.value === ''){
                 error(el)
